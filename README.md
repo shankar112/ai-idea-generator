@@ -14,3 +14,24 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# AI Idea Generator
+
+Type a topic → get 5 startup ideas (mock by default; switch to real AI via .env).
+
+## Stack
+Vite + React, CSS Modules, (optional) OpenAI chat completions
+
+## Run
+npm install
+npm run dev
+
+## Configure
+Copy `.env.example` to `.env`.  
+- Keep `VITE_AI_MODE=mock` to try it quickly.
+- Set `VITE_AI_MODE=real` + `VITE_OPENAI_API_KEY` to use OpenAI.
+
+## Deploy
+- Netlify: drag & drop `dist` or connect repo (build: `npm run build`, publish: `dist`)
+- Vercel: `npm run build` → set framework: Vite
+

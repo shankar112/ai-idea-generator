@@ -1,0 +1,35 @@
+.form {
+  margin: 22px auto 8px;
+  display: flex;
+  gap: 10px;
+  max-width: 760px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #1a2232;
+  background: #0e1421;
+  color: #e7ebf3;
+  outline: none;
+}
+.input::placeholder { color: #6a758b; }
+
+.button {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #2d3c5d;
+  background: linear-gradient(180deg, #29406d, #1e2a45);
+  color: #e7ebf3;
+  cursor: pointer;
+  min-width: 150px;
+}
+.button:hover {
+  border-color: #5b8cff;
+  transform: translateY(-1px);
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
